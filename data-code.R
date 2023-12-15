@@ -106,7 +106,7 @@ df <- relocate(df, Mushrooms, LSD, Ayahuasca, DMT, MeO, Iboga, SanPedro, BufoAlv
 df <- relocate(df, ReasonExplore, ReasonFriends, ReasonAlone, ReasonRoutine, ReasonGrowth, ReasonReligious, ReasonMedication, ReasonOther, .after = ReasonUsePsych)
 df <- relocate(df, Marijuana, Tobacco, Stimulants, Caffeine, Sedatives, Antidepressants, Dissociatives, Alcohol, MDMA, OtherPsych, NoPA, .after = PsychSubstance)
 
-#remove unecessary columns
+#remove unnecessary columns
 interest = c(1:8, #religion
              which(colnames(df) == "Mushrooms"):which(colnames(df) == "NoPD"),
              which(colnames(df)== "ReasonExplore"):which(colnames(df) == "ReasonMedication"),
